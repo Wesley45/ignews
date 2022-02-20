@@ -63,7 +63,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             );
 
             break;
-
           case "chechout.session.completed":
             const chechoutSession = event.data
               .object as Stripe.Checkout.Session;
